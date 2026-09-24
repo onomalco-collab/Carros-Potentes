@@ -462,34 +462,51 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Reduz o tamanho do cabeçalho e ajusta o alinhamento */
-  header {
-    padding: 10px 15px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
+    /* Ajusta o topo da página para não ser tapado pela barra */
+    .main-content {
+        padding-top: 130px !important;
+    }
 
-  /* Ajusta o tamanho do logo */
-  header h1, header .logo, header img {
-    font-size: 1.2rem !important;
-    margin-bottom: 8px !important;
-  }
+    /* Torna o container da barra compacto e centrado */
+    .nav-container {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 8px 12px !important;
+        gap: 8px !important;
+    }
 
-  /* Organiza os botões em lista compacta */
-  nav ul {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 6px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
+    /* Reduz ligeiramente o logo */
+    .logo {
+        font-size: 1.1rem !important;
+    }
 
-  /* Reduz o tamanho dos botões do menu */
-  nav ul li a, header a {
-    padding: 6px 12px !important;
-    font-size: 0.85rem !important;
-    border-radius: 4px !important;
-  }
+    /* Organiza os botões do menu em grelha flexível centrada */
+    .nav-menu ul {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 4px !important;
+        width: 100% !important;
+    }
+
+    /* Torna os botões do menu pequenos, elegantes e fáceis de tocar no telemóvel */
+    .nav-link {
+        font-size: 0.72rem !important;
+        padding: 4px 8px !important;
+        border-radius: 4px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Ajusta a secção hero para o ecrã do telemóvel */
+    .hero-title {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero-slogan {
+        font-size: 1.2rem !important;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
 }
